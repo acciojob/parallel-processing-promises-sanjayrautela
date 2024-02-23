@@ -1,4 +1,12 @@
 //your JS code here. If required.
+
+const images = [
+  { url: "https://picsum.photos/id/237/200/300" },
+  { url: "https://picsum.photos/id/238/200/300" },
+  { url: "https://picsum.photos/id/239/200/300" },
+];
+
+
 document.getElementById('download-images-button').addEventListener('click', async function() {
   try {
     const promises = images.map(async image => {
@@ -18,8 +26,4 @@ document.getElementById('download-images-button').addEventListener('click', asyn
   }
 });
 
-const images = [
-  { url: "https://picsum.photos/id/237/200/300" },
-  { url: "https://picsum.photos/id/238/200/300" },
-  { url: "https://picsum.photos/id/239/200/300" },
-];
+
